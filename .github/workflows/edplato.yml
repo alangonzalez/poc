@@ -1,0 +1,19 @@
+on:
+  pull_request: {}
+  push:
+    branches:
+    - main
+    - master
+  workflow_dispatch:
+
+name: TruffleHog Secrets
+jobs:
+  semgrep:
+    name: Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo Action
+        uses: actions/checkout@v2
+        
+      - name: Trufflehog Actions Scan
+        uses: edplato/trufflehog-actions-scan@v0.9k-beta

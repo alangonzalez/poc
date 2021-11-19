@@ -4,6 +4,7 @@ credentials:
     slack_access: xoxe.xoxp-1-Mi0yLTE0MzExNDA3MTk2NTUtMjY2MDQ0NjE4MDk3OC0yNzQ3ODk2Mjk4MzM3LTI3MzIzMTI4OTU3ODEtZTc4ZjcwYmZjODdiMzFlNjQyMDNiZmQ3MTYxYzlkMDQyYmYxZGY3MTU3Mzk5YTJmMzU5M2I1MGI1ZjUzM2EyZg
     slack_refresh: xoxe-1-My0xLTE0MzExNDA3MTk2NTUtMjc0Nzg5NjI5ODMzNy0yNzU4OTc2MTkzNjQ4LWRjYjY0MDMwOWIwZTczOGRmZjdmNTcyNTNiYTFmNzZmNTE3N2IwMTFlZDdhYjgyMmM4YTlmNGY1MjZlNjlhMTk
     atlassian: jLPMOeSw4KDRxyGRiywEA385
+    ARTIFACTORY_TOKEN: AKCp5budTFpbypBqQbGJPz3pGCi28pPivfWczqjfYb9drAmd9LbRZbj6UpKFxJXA8ksWGc9fM
   
 logfile:accessKeys\":[{\"id\":0,\"isMaster\":true,\"password\":\"xfoot\"
 logfile:"data":{"email":"null+integration@plumewifi.com","password":"xfoot","ttl":15800000}

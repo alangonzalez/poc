@@ -1,6 +1,6 @@
 credentials:
     some_value_here: not_secret
-    other_value_here: 1234567890a
+    other_value_here: 1234567890a 
     nested:
         value: AKIATESTTESTTESTTEST
         other_value: abcdefghijklmnop

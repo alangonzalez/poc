@@ -11,7 +11,7 @@ logfile:{*\"email\":\"null+integrationTwentyTwentyOne@plumewifi.com\",\"password
 
 
 
-test_agent::allowlisted_api_key: 'ToCynx5Se4e2PtoZxEhW7lUJcOX15c54'  # pragma: allowlist secret
+test_agent::allowlisted_api_key: 'ToCynx5Se4e2PtoZxEhW7lUJcOX15c54'  # pragma: allowlist secret 
 low_entropy_binary_secret: !!binary MjNjcnh1IDJieXJpdXYyeXJpaTJidnl1MnI4OXkyb3UwMg==
 
 # this should be ignored as a potential id

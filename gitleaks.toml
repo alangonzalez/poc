@@ -35,11 +35,31 @@ description = "GitLab Personal Access Token"
 regex = '''glpat-[0-9a-zA-Z\-]{20}'''
 tags = ["gitlab", "revocation_type"]
 
-[[rules]]
-description = "AWS"
-regex = '''AKIA[0-9A-Z]{16}'''
-tags = ["aws", "revocation_type"]
+#[[rules]]
+#description = "AWS"
+#regex = '''AKIA[0-9A-Z]{16}'''
+#tags = ["aws", "revocation_type"]
 
+[[rules]]
+	description = "AWS Access Key"
+	regex = '''(A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}'''
+	tags = ["key", "AWS"]
+
+[[rules]]
+	description = "AWS cred file info"
+	regex = '''(?i)(aws_access_key_id|aws_secret_access_key)(.{0,20})?=.[0-9a-zA-Z\/+]{20,40}'''
+	tags = ["AWS"]
+
+[[rules]]
+	description = "AWS Secret Key"
+	regex = '''(?i)aws(.{0,20})?(?-i)['\"][0-9a-zA-Z\/+]{40}['\"]'''
+	tags = ["key", "AWS"]
+
+[[rules]]
+	description = "AWS MWS key"
+	regex = '''amzn\.mws\.[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'''
+	tags = ["key", "AWS", "MWS"]
+  
 # Cryptographic keys
 [[rules]]
 description = "PKCS8 private key"

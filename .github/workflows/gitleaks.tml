@@ -1,0 +1,19 @@
+name: gitleaks
+
+on:
+  pull_request: {}
+  push:
+    branches:
+    - main
+    - master
+  workflow_dispatch:
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: gitleaks-action
+      uses: zricethezav/gitleaks-action@master
+      with:
+        config-path: gitleaks_leaky_repo.toml

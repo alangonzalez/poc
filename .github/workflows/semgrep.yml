@@ -18,6 +18,6 @@ jobs:
     - name: JSON Report
       run: |
         find . -name '*.json' -print
-    - name: SARIF Report
-      run: |
-        find . -name '*.sarif' -exec cat {} \;
+#    - name: SARIF Report
+#      run: |
+#        find . -name '*.sarif' -exec cat {} \;

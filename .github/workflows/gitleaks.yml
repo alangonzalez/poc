@@ -17,7 +17,7 @@ jobs:
       run: |
         git clone https://github.com/alangonzalez/gitleaks-global-config && cp gitleaks-global-config/security/* . 
     - run: |
-        ls -ltr * && pip3 install toml && python3 gitleaks_config_generator.py && ls -ltr *
+        ls -ltr * && pip3 install toml && python3 gitleaks_config_generator.py && ls -ltr * && head -50 global_config.toml
     - name: gitleaks-action
       uses: zricethezav/gitleaks-action@master
       with:

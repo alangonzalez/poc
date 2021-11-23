@@ -2,7 +2,8 @@ name: Kotlin-Linter
 
 on:
   pull_request:
-
+  workflow_dispatch:
+  
 jobs:
   ktlint:
     runs-on: ubuntu-latest

@@ -19,6 +19,8 @@ jobs:
     - run: |
         ls -ltr *
     - uses: actions/checkout@v1
+      with:
+        clean: false
     - run: |
         ls -ltr *
     - name: gitleaks-action

@@ -15,6 +15,26 @@ jobs:
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
         generateSarif: 1
+    - name: GetChangedFiles
+      uses: jitterbit/get-changed-files@v1
+      id: abc
+      with:
+          format: space-delimited
+          token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Printing
+      run: |
+          echo "All:"
+          echo "${{ steps.abc.outputs.all }}"
+          echo "Added:"
+          echo "${{ steps.abc.outputs.added }}"
+          echo "Removed:"
+          echo "${{ steps.abc.outputs.removed }}"
+          echo "Renamed:"
+          echo "${{ steps.abc.outputs.renamed }}"
+          echo "Modified:"
+          echo "${{ steps.abc.outputs.modified }}"
+          echo "Added+Modified:"
+          echo "${{ steps.abc.outputs.added_modified }}"
     - name: Commit back SARIF (if it was missing)
       uses: stefanzweifel/git-auto-commit-action@v4
       with:

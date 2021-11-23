@@ -1,0 +1,5 @@
+[allowlist]
+  commits = [ "somecommitID", "anothercommitID"]
+  files = [ '''go\.(mod|sum)''', "file-with-some-tests.js", "global_config.toml"]
+  paths = [ '''templates\/(en|es)''', "mock/server"]
+  regexes = ['''auth_test''']

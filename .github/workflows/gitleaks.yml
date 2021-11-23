@@ -13,7 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: gitleaks-action
-      uses: alangonzalez/gitleaks-action@master
+    - name: security-gitleaks-config
+      uses: actions/checkout@v2
       with:
-        config-path: gitleaks.global.toml
+        repository: alangonzalez/gitleaks-global-config
+    - name: gitleaks-action
+      uses: zricethezav/gitleaks-action@master
+      with:
+        config-path: security/gitleaks.global.toml

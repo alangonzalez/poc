@@ -1,6 +1,7 @@
 credentials:
     linkedin_access: 1234567890a
     stripe: rk_live_TESTtestTESTtestTESTtest
+    stripe: rk_live_Mi0yLTE0MzExNDA3MTk2NTUt
     slack_access: xoxe.xoxp-1-Mi0yLTE0MzExNDA3MTk2NTUtMjY2MDQ0NjE4MDk3OC0yNzQ3ODk2Mjk4MzM3LTI3MzIzMTI4OTU3ODEtZTc4ZjcwYmZjODdiMzFlNjQyMDNiZmQ3MTYxYzlkMDQyYmYxZGY3MTU3Mzk5YTJmMzU5M2I1MGI1ZjUzM2EyZg
     slack_refresh: xoxe-1-My0xLTE0MzExNDA3MTk2NTUtMjc0Nzg5NjI5ODMzNy0yNzU4OTc2MTkzNjQ4LWRjYjY0MDMwOWIwZTczOGRmZjdmNTcyNTNiYTFmNzZmNTE3N2IwMTFlZDdhYjgyMmM4YTlmNGY1MjZlNjlhMTk
     atlassian: jLPMOeSw4KDRxyGRiywEA385

@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: security-gitleaks-config
       run: |
-        wget https://github.com/alangonzalez/gitleaks-global-config/security/global_conflg.toml && wget https://github.com/alangonzalez/gitleaks-global-config/security/gitleaks_config_generator.py 
+        wget https://github.com/alangonzalez/gitleaks-global-config/blob/main/security/global_config.toml && wget https://github.com/alangonzalez/gitleaks-global-config/blob/main/security/gitleaks_config_generator.py 
     - run: |
         ls -ltr * && python3 gitleaks_config_generator.py && ls -ltr *
     - name: gitleaks-action

@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: gitleaks-action
-      uses: zricethezav/gitleaks-action@master
+      uses: alangonzalez/gitleaks-action@master
       with:
-        config-path: gitleaks.toml
+        config-path: gitleaks.global.toml

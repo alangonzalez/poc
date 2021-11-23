@@ -124,7 +124,7 @@ regex = '''xox[baprs]-([0-9a-zA-Z]{10,48})?'''
 
 [[rules]]
 description = "Stripe"
-regex = '''(?i)(sk|pk)_(test|live)_[0-9a-z]{10,32}'''
+regex = '''(?i)(sk|pk|rk)_(test|live)_[0-9a-z]{10,32}'''
 
 [[rules]]
 description = "PyPI upload token"

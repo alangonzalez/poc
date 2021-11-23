@@ -1,5 +1,5 @@
 package com.alan.application
-// foo  
+// foo   
 import android.app.Application
 
 @AndroidApp

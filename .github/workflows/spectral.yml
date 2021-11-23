@@ -1,11 +1,11 @@
 name: SpectralSecrets
 
 on:
-  pull_request: {}
-  push:
-    branches:
-    - main
-    - master
+  #pull_request: {}
+  #push:
+  #  branches:
+  #  - main
+  #  - master
   workflow_dispatch:
 
 env:

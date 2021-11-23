@@ -15,10 +15,6 @@ jobs:
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
         generateSarif: 1
-    - name: GetChangedFiles
+    - name: SARIF Report
       run: |
         find . -name '*.sarif' -exec cat {} \;
-    - name: Commit back SARIF (if it was missing)
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: "build(semgrep): Commit the newly-generated SARIF file"

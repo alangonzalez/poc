@@ -14,9 +14,17 @@ jobs:
     - uses: returntocorp/semgrep-action@v1
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
+        generateSarif: 1
     - name: JSON Report
       run: |
         find . -name '*.json' -print
-#    - name: SARIF Report
-#      run: |
-#        find . -name '*.sarif' -exec cat {} \;
+    - name: SARIF Report
+      run: |
+        find . -name '*.sarif' -print
+    - name: Upload SARIF file
+      uses: github/codeql-action/upload-sarif@v1
+      with:
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: results.sarif
+          
+          #        find . -name '*.sarif' -exec cat {} \;

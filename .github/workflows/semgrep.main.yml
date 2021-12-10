@@ -18,9 +18,9 @@ jobs:
       continue-on-error: true
  # https://docs.github.com/en/actions/advanced-guides/storing-workflow-data-as-artifacts
  # Optional.
-   - name: "Upload artifact"
-     uses: actions/upload-artifact@v2
-     with:
+    - name: "Upload artifact"
+      uses: actions/upload-artifact@v2
+      with:
           name: SARIF file
           path: semgrep.sarif
           retention-days: 30
